@@ -15,4 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lilac.mk
+    $(LOCAL_DIR)/aicp_lilac.mk
+
+COMMON_LUNCH_CHOICES := \
+    aicp_apollo-userdebug \
+    aicp_apollo-eng
