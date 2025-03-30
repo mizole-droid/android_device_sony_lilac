@@ -28,8 +28,9 @@ TARGET_BOOTLOADER_BOARD_NAME := G8441
 ifeq ($(DOCKER),1)
 	TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_docker_defconfig
 else
-	TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_defconfig
+	TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_defconfig shunodroid.config
 endif
+KERNEL_LTO=full
 BOARD_KERNEL_CMDLINE += androidboot.hardware=lilac
 
 ### PARTITIONS
